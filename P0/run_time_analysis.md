@@ -28,14 +28,14 @@ Only 1 iteration loop used
 
 The script correctly prints the telephone codes called by fixed-line numbers in Bangalore and the percentage of calls from fixed lines in Bangalore that are to fixed lines in Bangalore.
 
-`O(n)`
+`O(n log n)`
 
-Two iteration loops used separately
+Two iteration loops used separately `O(n)` but because it uses the sorting method `O(n log n)`
 
 ## Task - 4
 
 The script correctly prints the list of numbers that could be telemarketers.
 
-`O(n)`
+`O(n log n)`
 
-Four loops iterating separately
+Four loops iterating separately `O(n)` but because it uses the sorting method the order of this relationship is `O(n log n)`
