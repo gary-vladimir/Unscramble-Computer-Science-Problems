@@ -70,3 +70,16 @@ for phone in receivers:
 
 print("The numbers called by people in Bangalore have codes:")
 print('\n'.join(sorted(codes)))
+
+
+# part B
+
+numbers_from_bangalore_to_bangalore = []
+for call in receivers:
+    if call.startswith("(080)"):
+        numbers_from_bangalore_to_bangalore.append(call)
+
+print(numbers_from_bangalore_to_bangalore)
+percentage = (len(numbers_from_bangalore_to_bangalore)/len(receivers))*100
+print(round(percentage, 2),  # 2 as for two decimal digits
+      "percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
