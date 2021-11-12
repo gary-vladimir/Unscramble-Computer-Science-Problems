@@ -64,7 +64,7 @@ for phone in receivers:
     elif phone.startswith("(0"):
       # Receiver is a fixed_line
         codes.add(phone[0:phone.find(")")+1])
-    else:
+    elif phone.startswith(("7", "8", "9")):
         # Receiver is a mobile number
         codes.add(phone[:4])
 
