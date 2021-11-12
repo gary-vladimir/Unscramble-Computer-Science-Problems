@@ -36,8 +36,8 @@ for call in calls:
 outgoing_texts = set()
 incoming_texts = set()
 for text in texts:
-    outgoing_texts.add(call[0])
-    incoming_texts.add(call[1])
+    outgoing_texts.add(text[0])
+    incoming_texts.add(text[1])
 
 
 for phone in outgoing_calls:
