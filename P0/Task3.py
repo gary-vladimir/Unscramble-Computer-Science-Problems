@@ -79,7 +79,6 @@ for call in receivers:
     if call.startswith("(080)"):
         numbers_from_bangalore_to_bangalore.append(call)
 
-print(numbers_from_bangalore_to_bangalore)
 percentage = (len(numbers_from_bangalore_to_bangalore)/len(receivers))*100
 print(round(percentage, 2),  # 2 as for two decimal digits
       "percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
